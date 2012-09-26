@@ -12,4 +12,3 @@ puts ["Udayan", "Shiralkar"]
 # with the instructor why both values added in Task # 2 may have been removed
 last_letter = letters.pop
 puts last_letters
-
