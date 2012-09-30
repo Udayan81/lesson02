@@ -7,6 +7,7 @@ suites = { :sp => "spades", :cl => "clubs", :di => "diamonds", he: "hearts"}
 # display the rank and suit for each card, as "9 of Hearts", etc.
 # don't worry about "jack" or "king" yet, just go up to "13 of Hearts", etc.
 
+print " First attempt: \n"
 suites.each_value do |suite|
 	count = 1
 	loop do
@@ -18,6 +19,23 @@ end
 
 print "\n\n"
 print " Second attempt: \n"
+
+
+suites.each_value do |suite|
+	puts "Ace of #{suite}"
+	count = 2
+	loop do
+		puts "#{count} of #{suite}"
+		count = count + 1
+		break if count > 10
+	end
+	puts "Jack of #{suite}"
+	puts "Queen of #{suite}"
+	puts "King of #{suite}"
+end
+
+print "\n\n"
+print " Third attempt: \n"
 
 
 13.times do |num|
@@ -33,4 +51,11 @@ end
 	puts  "#{num} of #{suites[:he]}"
 end
 
-		
+print "\n\n"
+
+
+
+
+
+
+
